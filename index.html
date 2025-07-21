@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header__left">
+    <header id="header">
+        <div class="header-left">
             <button>
                 <img class="menu-icon" src="./assets/icons/menu.svg" alt="Abrir menu">
             </button>
@@ -20,13 +20,13 @@
                 <img class="youtube-icon" src="./assets/icons/youtube.svg" alt="Logo do YouTube">
             </button>
         </div>
-        <div class="header__center">
+        <div class="header-center">
             <input type="search" name="search-video" id="search-video" placeholder="Pesquisar vídeos">
             <button>
                 <img class="search-icon" src="./assets/icons/search.svg" alt="Buscar">
             </button>
         </div>
-        <div class="header__right">
+        <div class="header-right">
             <button>
                 <img class="video-icon" src="./assets/icons/video.svg" alt="Criar vídeo">
             </button>
@@ -38,13 +38,145 @@
             </button>
         </div>
     </header>
-    <main>
-        <aside>
-
+    <main id="main">
+        <article class="main-content">
+            <img class="video" src="./assets/images/video-background.png" alt="">
+            <header>
+                <h1 class="video-title">Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h1>
+                <div class="video-actions">
+                    <button class="channel-info">
+                        <img class="channel-image" src="./assets/images/channel-avatar.png" alt="">
+                        <strong class="channel-name">
+                            DIO<br>
+                            <p class="channel-subscribers">83,3 mil inscritos</p>
+                        </strong>
+                    </button>
+                    <button class="subscribe-button">INSCREVA-SE</button>
+                    <button class="action-button">
+                        <img src="./assets/icons/like.svg" alt="">
+                        2 mil
+                    </button>
+                    <button class="action-button">
+                        <img src="./assets/icons/dislike.svg" alt="">
+                        Não gostei
+                    </button>
+                    <button class="action-button">
+                        <img src="./assets/icons/share.svg" alt="">
+                        Compartilhar
+                    </button>
+                    <button class="action-button">
+                        <img src="./assets/icons/download.svg" alt="">
+                        Download
+                    </button>
+                </div>
+                <p class="video-views">28.418 visualizações  Transmitido ao vivo em 23 ago. de 2022</p>
+                <p class="video-description">Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.</p>
+            </header>
+        </article>
+        <aside class="main-sidebar">
+            <a href="#" class="recommended-video-item">
+                <img src="./assets/images/thumb-0.png" alt="Thumb do vídeo Geração Tech Unimed - BH - Ciência de Dados">
+                <div class="recommended-video-info">
+                    <h2 class="recommended-video-title">Geração Tech Unimed - BH - Ciência de Dados</h2>
+                    <p class="recommended-video-channel">DigitalInnovationOne</p>
+                    <p class="recommended-video-views">
+                        2,1 mil visualizações<br>
+                        Transmitido há 2 dias
+                    </p>
+                </div>
+            </a>
+            <a href="#" class="recommended-video-item">
+                <img src="./assets/images/thumb-1.png" alt="Thumb do vídeo Scrum Talks">
+                <div class="recommended-video-info">
+                    <h2 class="recommended-video-title">Scrum Talks</h2>
+                    <p class="recommended-video-channel">DigitalInnovationOne</p>
+                    <p class="recommended-video-views">
+                        1,6 mil visualizações<br>
+                        Transmitido há 3 dias
+                    </p>
+                </div>
+            </a>
+            <a href="#" class="recommended-video-item">
+                <img src="./assets/images/thumb-2.png" alt="Thumb do vídeo Machine Learning Avançado - Fast Track">
+                <div class="recommended-video-info">
+                    <h2 class="recommended-video-title">Machine Learning Avançado - Fast Track</h2>
+                    <p class="recommended-video-channel">DigitalInnovationOne</p>
+                    <p class="recommended-video-views">
+                        1,7 mil visualizações<br>
+                        Transmitido há 4 dias
+                    </p>
+                </div>
+            </a>
+            <a href="#" class="recommended-video-item">
+                <img src="./assets/images/thumb-3.png" alt="Thumb do vídeo Global Skills #2 - Project Planning">
+                <div class="recommended-video-info">
+                    <h2 class="recommended-video-title">Global Skills #2 - Project Planning</h2>
+                    <p class="recommended-video-channel">DigitalInnovationOne</p>
+                    <p class="recommended-video-views">
+                        971 visualizações<br>
+                        Transmitido há 5 dias
+                    </p>
+                </div>
+            </a>
+            <a href="#" class="recommended-video-item">
+                <img src="./assets/images/thumb-4.png" alt="Thumb do vídeo Como aprender a programar Python do ZERO">
+                <div class="recommended-video-info">
+                    <h2 class="recommended-video-title">Como aprender a programar Python do ZERO</h2>
+                    <p class="recommended-video-channel">DigitalInnovationOne</p>
+                    <p class="recommended-video-views">
+                        711 visualizações<br>
+                        Transmitido há 6 dias
+                    </p>
+                </div>
+            </a>
+            <a href="#" class="recommended-video-item">
+                <img src="./assets/images/thumb-0.png" alt="Thumb do vídeo Geração Tech Unimed - BH - Ciência de Dados">
+                <div class="recommended-video-info">
+                    <h2 class="recommended-video-title">Geração Tech Unimed - BH - Ciência de Dados</h2>
+                    <p class="recommended-video-channel">DigitalInnovationOne</p>
+                    <p class="recommended-video-views">
+                        2,1 mil visualizações<br>
+                        Transmitido há 2 dias
+                    </p>
+                </div>
+            </a>
+            <a href="#" class="recommended-video-item">
+                <img src="./assets/images/thumb-1.png" alt="Thumb do vídeo Scrum Talks">
+                <div class="recommended-video-info">
+                    <h2 class="recommended-video-title">Scrum Talks</h2>
+                    <p class="recommended-video-channel">DigitalInnovationOne</p>
+                    <p class="recommended-video-views">
+                        1,6 mil visualizações<br>
+                        Transmitido há 3 dias
+                    </p>
+                </div>
+            </a>
+            <a href="#" class="recommended-video-item">
+                <img src="./assets/images/thumb-2.png" alt="Thumb do vídeo Machine Learning Avançado - Fast Track">
+                <div class="recommended-video-info">
+                    <h2 class="recommended-video-title">Machine Learning Avançado - Fast Track</h2>
+                    <p class="recommended-video-channel">DigitalInnovationOne</p>
+                    <p class="recommended-video-views">
+                        1,7 mil visualizações<br>
+                        Transmitido há 4 dias
+                    </p>
+                </div>
+            </a>
+            <a href="#" class="recommended-video-item">
+                <img src="./assets/images/thumb-3.png" alt="Thumb do vídeo Global Skills #2 - Project Planning">
+                <div class="recommended-video-info">
+                    <h2 class="recommended-video-title">Global Skills #2 - Project Planning</h2>
+                    <p class="recommended-video-channel">DigitalInnovationOne</p>
+                    <p class="recommended-video-views">
+                        971 visualizações<br>
+                        Transmitido há 5 dias
+                    </p>
+                </div>
+            </a>
         </aside>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>

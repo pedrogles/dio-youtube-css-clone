@@ -1,7 +1,7 @@
 @import '/assets/styles/reset.css';
 
 /* Navbar */
-header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,36 +10,36 @@ header {
     padding: 0 2.4rem;
 }
 
-header .header__left button,
-header .header__center button,
-header .header__right button {
+#header .header-_left button,
+#header .header-center button,
+#header .header-right button {
     display: flex;
     align-items: center;
 }
 
-header .header__left {
+#header .header-left {
     display: flex;
     gap: 2.4rem;
 }
 
-header .header__left .menu-icon {
+#header .header-left .menu-icon {
     width: 2.4rem;
     cursor: pointer;
 }
 
-header .header__left .youtube-icon {
+#header .header-left .youtube-icon {
     width: 9rem;
     cursor: pointer;
 }
 
-header .header__center {
+#header .header-center {
     flex: 1;
     display: flex;
     justify-content: center;
     padding: 0 2.4rem;
 }
 
-header .header__center input {
+#header .header-center input {
     border: solid .1rem #CCCCCC;
     height: 4rem;
     width: 100%;
@@ -48,7 +48,7 @@ header .header__center input {
     padding: 1rem;
 }
 
-header .header__center button {
+#header .header-center button {
     display: inherit;
     justify-content: inherit;
     background-color: #F8F8F8;
@@ -58,29 +58,171 @@ header .header__center button {
     cursor: pointer;
 }
 
-header .header__center .search-icon {
+#header .header-center .search-icon {
     width: 2.4rem;
     cursor: pointer;
 }
 
-header .header__right {
+#header .header-right {
     display: flex;
     gap: 2.4rem;
 }
 
-header .header__right .video-icon,
-header .header__right .bell-icon {
+#header .header-right .video-icon,
+#header .header-right .bell-icon {
     width: 2.4rem;
     cursor: pointer;
 }
 
 
-header .header__right .user-image {
+#header .header-right .user-image {
     width: 3.4rem;
     border-radius: 50%;
     cursor: pointer;
 }
 
 /* Main */
+/* Main Content */
+#main {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 3rem;
+}
+
+#main .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+#main .main-content .video {
+    width: 100%;
+    max-width: 95.2rem;
+}
+
+#main .main-content header {
+    display: flex;
+    flex-direction: inherit;
+    gap: 1.6rem;
+    max-width: 95.2rem;
+}
+
+#main .main-content header .video-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+#main .main-content header .video-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.4rem 4.2rem;
+}
+
+#main .main-content header .video-actions .channel-info {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    cursor: pointer;
+}
+
+#main .main-content header .video-actions .channel-info .channel-image {
+    width: 4.2rem;
+    border-radius: 50%;
+}
+
+#main .main-content header .video-actions .channel-info .channel-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: start;
+    line-height: 100%;
+}
+
+#main .main-content header .video-actions .channel-info .channel-subscribers {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#main .main-content header .video-actions .subscribe-button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: #CC0000;
+    color: #FFFFFF;
+    height: 4rem;
+    width: 100%;
+    max-width: 15.9rem;
+    cursor: pointer;
+}
+
+#main .main-content header .video-actions .action-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+}
+
+#main .main-content header .video-actions .action-button img {
+    width: 2.4rem;
+}
+
+#main .main-content header .video-views {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#main .main-content header .video-description {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* Sidebar */
+#main .main-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#main .main-sidebar .recommended-video-item {
+    display: flex;
+    gap: 1.6rem;
+    width: 100%;
+    max-width: 36rem;
+}
+
+#main .main-sidebar .recommended-video-item img {
+    width: 100%;
+    max-width: 16rem;
+    height: 9rem;
+    object-fit: cover;
+}
+
+#main .main-sidebar .recommended-video-item .recommended-video-info {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+#main .main-sidebar .recommended-video-item .recommended-video-info .recommended-video-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+#main .main-sidebar .recommended-video-item .recommended-video-info .recommended-video-channel {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#main .main-sidebar .recommended-video-item .recommended-video-info .recommended-video-views {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 100%;
+}
 
 /* Footer */
