@@ -1,6 +1,85 @@
 @import '/assets/styles/reset.css';
 
 /* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.6rem;
+    background-color: #ffffff;
+    padding: 0 2.4rem;
+}
+
+header .header__left button,
+header .header__center button,
+header .header__right button {
+    display: flex;
+    align-items: center;
+}
+
+header .header__left {
+    display: flex;
+    gap: 2.4rem;
+}
+
+header .header__left .menu-icon {
+    width: 2.4rem;
+    cursor: pointer;
+}
+
+header .header__left .youtube-icon {
+    width: 9rem;
+    cursor: pointer;
+}
+
+header .header__center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 2.4rem;
+}
+
+header .header__center input {
+    border: solid .1rem #CCCCCC;
+    height: 4rem;
+    width: 100%;
+    max-width: 34.8rem;
+    min-width: 5rem;
+    padding: 1rem;
+}
+
+header .header__center button {
+    display: inherit;
+    justify-content: inherit;
+    background-color: #F8F8F8;
+    border: solid .1rem #CCCCCC;
+    height: 4rem;
+    width: 5.7rem;
+    cursor: pointer;
+}
+
+header .header__center .search-icon {
+    width: 2.4rem;
+    cursor: pointer;
+}
+
+header .header__right {
+    display: flex;
+    gap: 2.4rem;
+}
+
+header .header__right .video-icon,
+header .header__right .bell-icon {
+    width: 2.4rem;
+    cursor: pointer;
+}
+
+
+header .header__right .user-image {
+    width: 3.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 /* Main */
 
