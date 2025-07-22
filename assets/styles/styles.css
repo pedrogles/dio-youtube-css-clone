@@ -7,10 +7,10 @@
     align-items: center;
     height: 5.6rem;
     background-color: #ffffff;
-    padding: 0 2.4rem;
+    padding: 0 1.6rem;
 }
 
-#header .header-_left button,
+#header .header-left button,
 #header .header-center button,
 #header .header-right button {
     display: flex;
@@ -19,75 +19,123 @@
 
 #header .header-left {
     display: flex;
-    gap: 2.4rem;
+    gap: 1rem;
 }
 
 #header .header-left .menu-icon {
-    width: 2.4rem;
+    width: 2rem;
     cursor: pointer;
 }
 
 #header .header-left .youtube-icon {
-    width: 9rem;
+    width: 6rem;
     cursor: pointer;
 }
 
 #header .header-center {
     flex: 1;
     display: flex;
-    justify-content: center;
-    padding: 0 2.4rem;
+    justify-content: flex-end;
+    padding: 0 1rem;
 }
 
 #header .header-center input {
-    border: solid .1rem #CCCCCC;
-    height: 4rem;
-    width: 100%;
-    max-width: 34.8rem;
-    min-width: 5rem;
-    padding: 1rem;
+    display: none;
 }
 
 #header .header-center button {
     display: inherit;
     justify-content: inherit;
-    background-color: #F8F8F8;
-    border: solid .1rem #CCCCCC;
-    height: 4rem;
-    width: 5.7rem;
     cursor: pointer;
 }
 
 #header .header-center .search-icon {
-    width: 2.4rem;
+    width: 2rem;
     cursor: pointer;
 }
 
 #header .header-right {
     display: flex;
-    gap: 2.4rem;
+    gap: 1rem;
 }
 
 #header .header-right .video-icon,
 #header .header-right .bell-icon {
-    width: 2.4rem;
+    width: 2rem;
     cursor: pointer;
 }
 
-
 #header .header-right .user-image {
-    width: 3.4rem;
+    width: 3rem;
     border-radius: 50%;
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #header {
+        padding: 0 2.4rem;
+    }
+    #header .header-left {
+        gap: 2.4rem;
+    }
+
+    #header .header-left .menu-icon {
+        width: 2.4rem;
+    }
+
+    #header .header-left .youtube-icon {
+        width: 9rem;
+    }
+
+    #header .header-center {
+        justify-content: center;
+        padding: 0 2.4rem;
+    }
+
+    #header .header-center input {
+        display: block;
+        border: solid .1rem #CCCCCC;
+        height: 4rem;
+        width: 100%;
+        max-width: 34.8rem;
+        min-width: 5rem;
+        padding: 1rem;
+    }
+
+    #header .header-center button {
+        display: flex;
+        justify-content: center;
+        background-color: #F8F8F8;
+        border: solid .1rem #CCCCCC;
+        height: 4rem;
+        width: 5.7rem;
+    }
+
+    #header .header-center .search-icon {
+        width: 2.4rem;
+    }
+
+    #header .header-right {
+        gap: 2.4rem;
+    }
+
+    #header .header-right .video-icon,
+    #header .header-right .bell-icon {
+        width: 2.4rem;
+    }
+
+    #header .header-right .user-image {
+        width: 3.4rem;
+    }
 }
 
 /* Main */
 /* Main Content */
 #main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 2.5rem;
-    padding: 3rem;
 }
 
 #main .main-content {
@@ -98,15 +146,17 @@
 }
 
 #main .main-content .video {
+    height: 38rem;
     width: 100%;
-    max-width: 95.2rem;
+    max-width: 102.4rem;
 }
 
 #main .main-content header {
     display: flex;
     flex-direction: inherit;
     gap: 1.6rem;
-    max-width: 95.2rem;
+    max-width: 102.4rem;
+    padding: 0 1.6rem;
 }
 
 #main .main-content header .video-title {
@@ -119,13 +169,13 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.4rem 4.2rem;
+    gap: 1.5rem;
 }
 
 #main .main-content header .video-actions .channel-info {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1rem;
     cursor: pointer;
 }
 
@@ -142,7 +192,7 @@
 }
 
 #main .main-content header .video-actions .channel-info .channel-subscribers {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
@@ -153,7 +203,7 @@
     color: #FFFFFF;
     height: 4rem;
     width: 100%;
-    max-width: 15.9rem;
+    max-width: 12rem;
     cursor: pointer;
 }
 
@@ -181,48 +231,115 @@
     font-weight: 400;
 }
 
+@media (min-width: 1024px) {
+    #main {
+        flex-direction: row;
+        padding: 3rem;
+    }
+
+    #main .main-content .video {
+        height: 51rem;
+        width: 100%;
+        max-width: 102.4rem;
+    }
+
+    #main .main-content header {
+        padding: 0;
+    }
+
+    #main .main-content header .video-actions {
+        gap: 1.4rem 4.2rem;
+    }
+
+    #main .main-content header .video-actions .channel-info {
+        gap: 1.2rem;
+    }   
+
+    #main .main-content header .video-actions .channel-info .channel-subscribers {
+        font-size: 1.4rem;
+    }
+
+    #main .main-content header .video-actions .subscribe-button {
+        max-width: 15.9rem;
+    }
+}
+
 /* Sidebar */
 #main .main-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2.5rem;
+    padding: 0 1.6rem 1.6rem 1.6rem;
 }
 
 #main .main-sidebar .recommended-video-item {
     display: flex;
-    gap: 1.6rem;
-    width: 100%;
-    max-width: 36rem;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 #main .main-sidebar .recommended-video-item img {
     width: 100%;
-    max-width: 16rem;
-    height: 9rem;
     object-fit: cover;
 }
 
 #main .main-sidebar .recommended-video-item .recommended-video-info {
     display: flex;
     flex-direction: column;
-    gap: .8rem;
+    gap: .4rem;
 }
 
 #main .main-sidebar .recommended-video-item .recommended-video-info .recommended-video-title {
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 100%;
+    width: 100%;
 }
 
 #main .main-sidebar .recommended-video-item .recommended-video-info .recommended-video-channel {
     font-size: 1.2rem;
     font-weight: 400;
+    width: inherit;
+    word-break: break-all;
 }
 
 #main .main-sidebar .recommended-video-item .recommended-video-info .recommended-video-views {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 100%;
+    width: inherit;
+}
+
+#main .main-sidebar .recommended-video-item .recommended-video-info .recommended-video-views .break-line {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    #main .main-sidebar {
+        padding: 0;
+    }
+
+    #main .main-sidebar .recommended-video-item {
+        flex-direction: row;
+        gap: 1.6rem;
+    }
+
+    #main .main-sidebar .recommended-video-item img {
+        max-width: 16rem;
+    }
+
+    #main .main-sidebar .recommended-video-item .recommended-video-info {
+        gap: .8rem;
+    }
+
+    #main .main-sidebar .recommended-video-item .recommended-video-info .recommended-video-title {
+        max-width: 18rem;
+    }
+
+    #main .main-sidebar .recommended-video-item .recommended-video-info .recommended-video-views .break-line {
+        display: block;
+    }
+
 }
 
 /* Footer */
