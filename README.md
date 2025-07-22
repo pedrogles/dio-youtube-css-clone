@@ -2,6 +2,8 @@
 
 Este é um projeto em HTML criado como parte do **Santander Bootcamp Front-end Developer**, promovido pela **DIO (Digital Innovation One)**. O desafio propõe a criação de uma versão simplificada da interface do YouTube, utilizando HTML5 e CSS3 com Flexbox, reforçando o uso de layout responsivo, semântica e organização de conteúdo.
 
+Acesse o design apresentado no Figma como referência para este projeto: <a href="https://www.figma.com/file/lrRWUZPKnqMDZrSDJmZxUS/Desafio-de-Flexbox---DIO?node-id=0%3A1" target="_blank" rel="noopener noreferrer">clique aqui!</a>
+
 ---
 
 ## ✨ Tecnologias Utilizadas
@@ -9,6 +11,8 @@ Este é um projeto em HTML criado como parte do **Santander Bootcamp Front-end D
 - HTML5 (Semântico)
 - CSS3
 - Flexbox
+- Grid
+- Design Responsivo
   
 ---
 
