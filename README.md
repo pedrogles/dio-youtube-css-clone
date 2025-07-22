@@ -24,4 +24,5 @@ Este é um projeto em HTML criado como parte do **Santander Bootcamp Front-end D
 
 ---
 
-<img width="1892" height="865" alt="image" src="https://github.com/user-attachments/assets/812dacd1-c5b1-456b-bf2e-179ac6bcd3b9" />
+<img width="1897" height="833" alt="image" src="https://github.com/user-attachments/assets/59087cea-1cd9-4369-ae25-50c8a5da4780" />
+
